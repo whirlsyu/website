@@ -18,7 +18,7 @@ body {
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: #E4E4E4;
+    background: #ffffff;
 }
 
 ::selection {
@@ -32,7 +32,7 @@ body {
 }
 
 p {
-    color: #858585;
+    color: #2e2d2d;
 }
 
 h1, h2, h3, h4, h5, h6 {

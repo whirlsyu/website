@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<link href="lib/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="lib/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="lib/chromoMap-0.3/d3.v5.js"></script>
+<script src="lib/chromoMap-0.3/chromoMap-3.0.js"></script>
+<script src="lib/chromoMap-0.3/saveSvgAsPng.js"></script>
+<script src="lib/chromoMap-0.3/saveFile.js"></script>
+<script src="lib/chromoMap-binding-4.1.1/chromoMap.js"></script>
+
+</head>
+<body>
+<div id="htmlwidget_container">
+  <div class="chromoMap html-widget html-fill-item" id="htmlwidget-chromosome" style="width:960px;height:500px;"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-chromosome">
+  {
+    "x": {
+        "chData": [
+            {
+                "name": [
+                    "exon-NM_130786.4-1",
+                    "exon-NM_130786.4-2",
+                    "exon-NM_130786.4-3",
+                    "exon-NM_130786.4-4",
+                    "exon-NM_130786.4-5",
+                    "exon-NM_130786.4-6",
+                    "exon-NM_130786.4-7",
+                    "exon-NM_130786.4-8"
+                ],
+                "data": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "hlink": [
+                    "http://",
+                    "http://",
+                    "http://",
+                    "http://",
+                    "http://",
+                    "http://",
+                    "http://",
+                    "http://"
+                ],
+                "cate": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "loci": [
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1",
+                    "chromap-chr19-99-1"
+                ],
+                "loci_start": [
+                    57946405,
+                    57946405,
+                    57946405,
+                    57946405,
+                    57946405,
+                    57946405,
+                    57946405,
+                    57946405
+                ],
+                "loci_end": [
+                    58537694,
+                    58537694,
+                    58537694,
+                    58537694,
+                    58537694,
+                    58537694,
+                    58537694,
+                    58537694
+                ],
+                "label": [
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1",
+                    "chromap-Lchr19-99-1"
+                ]
+            }
+        ],
+        "nLoci": [
+            {
+                "name": [
+                    "chr19"
+                ],
+                "start": [
+                    1
+                ],
+                "end": [
+                    59128983
+                ],
+                "ch_average": [
+                    1
+                ],
+                "n": [
+                    100
+                ],
+                "cnt_start": [
+                    26700000
+                ],
+                "cnt_proprtion": [
+                    0.45
+                ],
+                "p": [
+                    45
+                ],
+                "q": [
+                    55
+                ],
+                "seq_len": [
+                    59128983
+                ]
+            }
+        ],
+        "ploidy_n": 1,
+        "title": null,
+        "cnt": true,
+        "ch_gap": 5,
+        "top_margin": 25,
+        "left_margin": 50,
+        "chr_width": 15,
+        "chr_length": 4,
+        "chr_col": [
+            "black",
+            ""
+        ],
+        "heatmap": false,
+        "ch_domain": [
+            "1",
+            "591291",
+            "1182581",
+            "1773871",
+            "2365161",
+            "2956451",
+            "3547740",
+            "4139030",
+            "4730320",
+            "5321610",
+            "5912900",
+            "6504190",
+            "7095479",
+            "7686769",
+            "8278059",
+            "8869349",
+            "9460639",
+            "10051929",
+            "10643218",
+            "11234508",
+            "11825798",
+            "12417088",
+            "13008378",
+            "13599668",
+            "14190957",
+            "14782247",
+            "15373537",
+            "15964827",
+            "16556117",
+            "17147407",
+            "17738696",
+            "18329986",
+            "18921276",
+            "19512566",
+            "20103856",
+            "20695146",
+            "21286435",
+            "21877725",
+            "22469015",
+            "23060305",
+            "23651595",
+            "24242885",
+            "24834174",
+            "25425464",
+            "26016754",
+            "26608044",
+            "27199334",
+            "27790624",
+            "28381913",
+            "28973203",
+            "29564493",
+            "30155783",
+            "30747073",
+            "31338362",
+            "31929652",
+            "32520942",
+            "33112232",
+            "33703522",
+            "34294812",
+            "34886101",
+            "35477391",
+            "36068681",
+            "36659971",
+            "37251261",
+            "37842551",
+            "38433840",
+            "39025130",
+            "39616420",
+            "40207710",
+            "40799000",
+            "41390290",
+            "41981579",
+            "42572869",
+            "43164159",
+            "43755449",
+            "44346739",
+            "44938029",
+            "45529318",
+            "46120608",
+            "46711898",
+            "47303188",
+            "47894478",
+            "48485768",
+            "49077057",
+            "49668347",
+            "50259637",
+            "50850927",
+            "51442217",
+            "52033507",
+            "52624796",
+            "53216086",
+            "53807376",
+            "54398666",
+            "54989956",
+            "55581246",
+            "56172535",
+            "56763825",
+            "57355115",
+            "57946405",
+            "58537695",
+            "59128983"
+        ],
+        "lg_x": 0,
+        "lg_y": 0,
+        "heat_scale": "linear",
+        "labels": false,
+        "div_id": "chromap",
+        "w": 550,
+        "h": null,
+        "rng": 0,
+        "heat_col": [
+
+        ],
+        "an_col": [
+            "#10B85F",
+            ""
+        ],
+        "ch_text": [
+            true,
+            true
+        ],
+        "legend": [
+            false,
+            false
+        ],
+        "aggregate_func": [
+            "avg",
+            ""
+        ],
+        "plots": [
+            "none",
+            ""
+        ],
+        "tag_filter": [
+            [
+                "none",
+                "0"
+            ]
+        ],
+        "plot_height": [
+            30,
+            0
+        ],
+        "plot_ticks": [
+            4,
+            0
+        ],
+        "plot_color": [
+            "blue",
+            ""
+        ],
+        "plot_y_domain": [
+            [
+                0,
+                0
+            ]
+        ],
+        "ref_line": [
+            false,
+            true
+        ],
+        "refl_pos": [
+            0,
+            0
+        ],
+        "refl_color": [
+            "grey",
+            ""
+        ],
+        "refl_stroke_w": [
+            2,
+            0
+        ],
+        "tagColor": [
+            "red",
+            ""
+        ],
+        "renderHeat": [
+            true,
+            true
+        ],
+        "text_font_size": [
+            10,
+            0
+        ],
+        "chr_curve": 5,
+        "title_font_size": 12,
+        "label_font": 9,
+        "label_angle": -90,
+        "vertical_grid": false,
+        "grid_array": [
+            0,
+            5000,
+            10000
+        ],
+        "grid_color": "grey",
+        "plot_filter": [
+            [
+                "none",
+                "0"
+            ]
+        ],
+        "loci_links": {
+            "src_loci": [
+                "none"
+            ],
+            "targ_loci": [
+                "none"
+            ]
+        },
+        "uniq_cates": 0,
+        "scatter_col": "#E0EEEE",
+        "grid_text": null,
+        "grid_text_size": 12,
+        "grid_text_y": 20,
+        "scatter_mapping": false,
+        "scatter_lg_x": 0,
+        "scatter_lg_y": 0,
+        "show_links": false,
+        "seg_anno": false,
+        "directed_edges": false,
+        "y_chr_scale": 0,
+        "links_colors": null,
+        "links_lg_x": 0,
+        "links_lg_y": 0,
+        "links_color_maps": false,
+        "win_scale": 100,
+        "scale_ticks": 5,
+        "export_options": false,
+        "guides": false,
+        "guides_color": "lightgrey",
+        "ann_h": 1,
+        "display_chr": [
+            true,
+            false
+        ],
+        "plot_shift": [
+            1,
+            0
+        ],
+        "plot_legend_label": [
+            "",
+            ""
+        ],
+        "cat_legend_lab": "",
+        "plot_y_labs": [
+            "",
+            ""
+        ],
+        "plot_y_lab_x": 10,
+        "plot_y_lab_y": 0,
+        "plot_y_lab_size": 15,
+        "scale_suffix": "bp",
+        "interactivity": true
+    },
+    "evals": [
+        
+    ],
+    "jsHooks": [
+        
+    ]
+}
+
+
+
+
+
+
+
+</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-c056f9475ab4f3b5e985">
+  {"viewer":{"width":450,"height":350,"padding":10,"fill":true},
+  "browser":{"width":960,"height":500,"padding":10,"fill":true}}
+</script>
+</body>
+</html>
