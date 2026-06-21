@@ -725,6 +725,30 @@ hr {
     border-color: #e2e8f0;
 }
 
+.maps {
+    text-align: center;
+}
+.map-placeholder {
+    background: #023e8a;
+    padding: 40px 20px;
+    color: #fff;
+}
+.map-address {
+    font-size: 16px;
+    line-height: 1.8;
+}
+.map-address p strong {
+    color: #ffffff;
+}
+.map-address p:nth-child(3) {
+    color: #ffffff;
+}
+.map-address i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    display: block;
+}
+
 footer {
     border-top: 1px solid #e2e8f0;
     padding: 45px 0;
