@@ -412,7 +412,7 @@ a:hover {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background: rgba(0, 180, 216, 0.8);
+    background: rgba(0, 180, 216, 0);
     color: #fff;
     display: flex;
     align-items: center;
@@ -422,6 +422,13 @@ a:hover {
 
 .da-arrows span:hover {
     background: #023e8a;
+}
+
+#da-slider .da-arrows-prev {
+    background-color: transparent;
+}
+#da-slider .da-arrows-next {
+    background-color: transparent;
 }
 
 .da-dots span {
