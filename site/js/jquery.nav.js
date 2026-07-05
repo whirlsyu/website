@@ -203,7 +203,12 @@
         },
 
         scrollTo: function (target, callback) {
-            var offset = $(target).offset().top - this.config.navHeight;
+            var $target = $(target);
+            if (!$target.length) {
+                if (callback) callback();
+                return;
+            }
+            var offset = $target.offset().top - this.config.navHeight;
             $('html, body').animate({
                 scrollTop: offset
             }, this.config.scrollSpeed, this.config.easing, callback);

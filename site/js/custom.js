@@ -56,7 +56,7 @@ var customScripts = {
             changeHash: false,
             scrollSpeed: 950,
             scrollThreshold: 0.2,
-            filter: '',
+            filter: ':not(.lang-switch)',
             easing: 'swing',
             begin: function () {
                 //I get fired when the animation is starting
