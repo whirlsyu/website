@@ -1,5 +1,103 @@
-<script language="javascript" type="text/javascript"> 
-    // 以下方式直接跳转
-    window.location.href='./site/index.html';
-    // 以下方式定时跳转
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genelibs - Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 100%);
+            font-family: Arial, sans-serif;
+        }
+        .loader {
+            text-align: center;
+            color: #00e5ff;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 229, 255, 0.3);
+            border-top-color: #00e5ff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .redirect-options {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .redirect-options a {
+            color: #00e5ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .redirect-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Detecting your location...</p>
+        <div class="redirect-options">
+            <a href="./site/index.html">中文</a> | <a href="./site/en/index.html">English</a>
+        </div>
+    </div>
+
+    <script>
+        function redirect(lang) {
+            if (lang === 'zh') {
+                window.location.href = './site/index.html';
+            } else {
+                window.location.href = './site/en/index.html';
+            }
+        }
+
+        function detectLocation() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://ipapi.co/json/', true);
+            xhr.timeout = 5000;
+            
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        var countryCode = data.country_code || '';
+                        if (countryCode.toUpperCase() === 'CN') {
+                            redirect('zh');
+                        } else {
+                            redirect('en');
+                        }
+                    } catch (e) {
+                        redirect('en');
+                    }
+                } else {
+                    redirect('en');
+                }
+            };
+
+            xhr.onerror = function() {
+                redirect('en');
+            };
+
+            xhr.ontimeout = function() {
+                redirect('en');
+            };
+
+            xhr.send();
+        }
+
+        detectLocation();
     </script>
+</body>
+</html>
