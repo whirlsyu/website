@@ -393,6 +393,11 @@ a:hover {
     z-index: 2;
 }
 
+section#home > div.hero-container > div.container > div.row > div.col-md-8.col-md-offset-2.text-center {
+    position: relative;
+    top: 4px;
+}
+
 .hero-content h1 {
     color: #fff;
     font-size: 4em;
