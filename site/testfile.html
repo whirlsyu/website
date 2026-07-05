@@ -1,0 +1,733 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>A2M</title>
+    <meta name="description" content="Alpha-2-macroglobulin is a protease inhibitor and cytokine transporter. It inhibits many proteases, including trypsin, thrombin and collagenase. A2M is implicated in Alzheimer disease (AD) due to its ability to mediate the clearance and degradation of A-beta, the major component of beta-amyloid deposits. [provided by RefSeq, Jul 2008]">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <meta name="author" content="WebThemez">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <!-- Owl Carousel Assets -->
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+    <script src="lib/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+    <script src="lib/chromoMap-0.3/d3.v5.js"></script>
+    <script src="lib/chromoMap-0.3/chromoMap-3.0.js"></script>
+    <script src="lib/chromoMap-0.3/saveSvgAsPng.js"></script>
+    <script src="lib/chromoMap-0.3/saveFile.js"></script>
+    <script src="lib/chromoMap-binding-4.1.1/chromoMap.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <section id="section-top" class="section section-top">
+            <div class="container">
+                <div class="row">
+                    <div class="region region-top-first col-xs-12 col-sm-8 col-md-7 col-lg-7">
+                        <div class="block-contents ">
+                            
+                            <div class="content">
+                                
+                                <ul>
+                                    <a href="#"><span><a href="#"><b>Genelibs</b></a></span></a>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Facebook"><i class="fa fa-facebook"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Twitter"><i class="fa fa-twitter"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Skype"><i class="fa fa-skype"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Dribbble"><i class="fa fa-dribbble"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Youtube"><i class="fa fa-youtube"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Tumblr"><i class="fa fa-tumblr"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Pinterest"><i class="fa fa-pinterest"><span></span></i></span></a></li>
+                                    <li><a href="#"><span data-toggle="tooltip" data-placement="bottom" class="superhero-tooltip" data-original-title="Google+"><i class="fa fa-google-plus"><span></span></i></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="clear: both" class="clear-fix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top logo"><b>Genelibs</b></a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#home" class="scroll-link">About Gene</a></li>
+                        <li><a href="#chromosome" class="scroll-link">Chromosome</a></li>
+                        <li><a href="#sequecne" class="scroll-link">Sequecne</a></li>
+                        <li><a href="#pathway" class="scroll-link">Pathway</a></li>
+                        <li><a href="#team" class="scroll-link">Downloads</a></li>
+                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </header>
+    <!--/.header-->
+    <div id="top"></div>
+
+    <section id="home">
+        <div class="banner-container">
+        </div>
+    </section>
+
+
+    <section id="home" class="page-section">
+        <!-- container -->
+        <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                            <h3 class="section-title col-md-3">A2M</h3>
+                            <h3 class="section-title col-md-9">alpha-2-macroglobulin</h3>
+                            </div>                
+                            <p>
+                                Alpha-2-macroglobulin is a protease inhibitor and cytokine transporter. It inhibits many proteases, including trypsin, thrombin and collagenase. A2M is implicated in Alzheimer disease (AD) due to its ability to mediate the clearance and degradation of A-beta, the major component of beta-amyloid deposits. [provided by RefSeq, Jul 2008]
+                            </p>
+                            <div class="col-md-12">
+
+                            </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group col-md-6">
+                                            <label>type</label>
+                                            <p>protein-coding gene</p>                                    
+                                        </div>
+                                        <div class="form-group col-md-6">                                            
+                                            <label>status</label>
+                                            <p>Approved</p>                                    
+                                        </div>
+                                        <div class="form-group col-md-6">                                            
+                                            <label>ENA</label>
+                                            <p>BX647329|X68728|M11313</p>                                    
+                                        </div>
+                                        <div class="form-group col-md-6">                                            
+                                            <label>RefSeq Accession</label>
+                                            <p>NM_000014</p>                                    
+                                        </div>
+                                        <div class="form-group col-md-12">                                            
+                                            <label>lsdb</label>
+                                            <p>LRG_591|http://ftp.ebi.ac.uk/pub/databases/lrgex/LRG_591.xml</p>                                    
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>alias_symbol</label>
+                                            <p>FWP007|S863-7|CPAMD5</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>alias_name</label>
+                                            <p>--</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>prev_symbol</label>
+                                            <p>--</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>prev_name</label>
+                                            <p>--</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>gene_group</label>
+                                            <p>Alpha-2-macroglobulin family</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>gene_group_id</label>
+                                            <p>2148</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>merops</label>
+                                            <p>I39.001</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label>lncipedia</label>
+                                            <p>--</p> 
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        	                                                                        
+                                    </div>                                
+                                </div> 
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="section-title">Other Databases</h3>
+                                    <div class="contact-info">
+                                        <h5>HGNC ID</h5>
+                                        <p>HGNC:7</p>
+                                        
+                                        <h5>Entrez Id</h5>
+                                        <p>2</p>
+                                        
+                                        <h5>Ensembl Gene Id</h5>
+                                        <p>ENSG00000175899</p>
+
+                                        <h5>UCSC Id</h5>
+                                        <p>uc001qvk.2</p>                                    
+
+                                        <h5>VEGA Id</h5>
+                                        <p>OTTHUMG00000150267</p>
+
+                                        <h5>CCDS Id</h5>
+                                        <p>CCDS44827</p>
+
+                                        <h5>Uniprot Id</h5>
+                                        <p>uc001qvk.2</p>
+
+                                        <h5>Pubmed Id</h5>
+                                        <p>2408344|9697696</p>
+                                        
+                                        <h5>Uniprot Id</h5>
+                                        <p>P01023</p>
+                                        
+                                        <h5>MGI Id</h5>
+                                        <p>MGI:2449119</p>
+
+                                        <h5>OMIM Id</h5>
+                                        <p>103950</p>
+                                        
+                            
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="section-title">Timings</h3>
+                                    <div class="contact-info">
+                                        <h5>Approved Reserved</h5>
+                                        <p>Jan. 1, 1986, midnight</p>
+                                        
+                                        <h5>Symbol Changed</h5>
+                                        <p>--</p>
+                                        
+                                        <h5>Name Changed</h5>
+                                        <p>--</p>
+                                        <h5>Modified</h5>
+                                        <p>Jan. 20, 2023, midnight</p>
+                                    </div>
+                                </div>
+                            </div>
+                            					
+                        </div>
+                    </div>
+                </div>
+        <!-- /container -->
+    </section>
+
+    <section id="chromosome" class="page-section">
+        <!-- container -->
+        <div class="container">
+            <div class="row">
+                <h2>Chromosome location</h2>
+            </div>    
+            <div class="row">
+                <div class="col-md-12">                            
+                    <h3>12p13.31</h3>					
+                </div>
+            </div>
+            <div id="htmlwidget_container">
+                <div class="chromoMap html-widget html-fill-item" id="htmlwidget-chromosome" style="width:960px;height:125px;"></div>
+              </div>
+              <script type="application/json" data-for="htmlwidget-chromosome">
+                {"x": {"chData": [{"name": ["exon-NM_130786.4-1", "exon-NM_130786.4-2", "exon-NM_130786.4-3", "exon-NM_130786.4-4", "exon-NM_130786.4-5", "exon-NM_130786.4-6", "exon-NM_130786.4-7", "exon-NM_130786.4-8"], "data": [null, null, null, null, null, null, null, null], "hlink": ["http://", "http://", "http://", "http://", "http://", "http://", "http://", "http://"], "cate": [null, null, null, null, null, null, null, null], "loci": ["chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1", "chromap-chr19-100-1"], "loci_start": [58031441, 58031441, 58031441, 58031441, 58031441, 58031441, 58031441, 58031441], "loci_end": [58617616, 58617616, 58617616, 58617616, 58617616, 58617616, 58617616, 58617616], "label": ["chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1", "chromap-Lchr19-100-1"]}], "nLoci": [{"name": ["chr19"], "start": [1], "end": [58617616], "ch_average": [1], "n": [100], "cnt_start": [24681782], "cnt_proprtion": [0.42], "p": [42], "q": [58], "seq_len": [58617616]}], "ploidy_n": 1, "title": null, "cnt": true, "ch_gap": 5, "top_margin": 25, "left_margin": 50, "chr_width": 15, "chr_length": 4, "chr_col": ["black", ""], "heatmap": false, "ch_domain": ["1", "586178", "1172354", "1758530", "2344706", "2930882", "3517058", "4103235", "4689411", "5275587", "5861763", "6447939", "7034115", "7620292", "8206468", "8792644", "9378820", "9964996", "10551172", "11137349", "11723525", "12309701", "12895877", "13482053", "14068229", "14654405", "15240582", "15826758", "16412934", "16999110", "17585286", "18171462", "18757639", "19343815", "19929991", "20516167", "21102343", "21688519", "22274696", "22860872", "23447048", "24033224", "24619400", "25205576", "25791753", "26377929", "26964105", "27550281", "28136457", "28722633", "29308809", "29894986", "30481162", "31067338", "31653514", "32239690", "32825866", "33412043", "33998219", "34584395", "35170571", "35756747", "36342923", "36929100", "37515276", "38101452", "38687628", "39273804", "39859980", "40446157", "41032333", "41618509", "42204685", "42790861", "43377037", "43963213", "44549390", "45135566", "45721742", "46307918", "46894094", "47480270", "48066447", "48652623", "49238799", "49824975", "50411151", "50997327", "51583504", "52169680", "52755856", "53342032", "53928208", "54514384", "55100561", "55686737", "56272913", "56859089", "57445265", "58031441", "58617616"], "lg_x": 0, "lg_y": 0, "heat_scale": "linear", "labels": false, "div_id": "chromap", "w": 550, "h": null, "rng": 0, "heat_col": [], "an_col": ["#10B85F", ""], "ch_text": [true, true], "legend": [false, false], "aggregate_func": ["avg", ""], "plots": ["none", ""], "tag_filter": [["none", "0"]], "plot_height": [30, 0], "plot_ticks": [4, 0], "plot_color": ["blue", ""], "plot_y_domain": [[0, 0]], "ref_line": [false, true], "refl_pos": [0, 0], "refl_color": ["grey", ""], "refl_stroke_w": [2, 0], "tagColor": ["red", ""], "renderHeat": [true, true], "text_font_size": [10, 0], "chr_curve": 5, "title_font_size": 12, "label_font": 9, "label_angle": -90, "vertical_grid": false, "grid_array": [0, 5000, 10000], "grid_color": "grey", "plot_filter": [["none", "0"]], "loci_links": {"src_loci": ["none"], "targ_loci": ["none"]}, "uniq_cates": 0, "scatter_col": "#DAA520", "grid_text": null, "grid_text_size": 12, "grid_text_y": 20, "scatter_mapping": false, "scatter_lg_x": 0, "scatter_lg_y": 0, "show_links": false, "seg_anno": false, "directed_edges": false, "y_chr_scale": 0, "links_colors": null, "links_lg_x": 0, "links_lg_y": 0, "links_color_maps": false, "win_scale": 100, "scale_ticks": 5, "export_options": false, "guides": false, "guides_color": "lightgrey", "ann_h": 1, "display_chr": [true, false], "plot_shift": [1, 0], "plot_legend_label": ["", ""], "cat_legend_lab": "", "plot_y_labs": ["", ""], "plot_y_lab_x": 10, "plot_y_lab_y": 0, "plot_y_lab_size": 15, "scale_suffix": "bp", "interactivity": true}, "evals": [], "jsHooks": []}          
+              </script>
+              <script type="application/htmlwidget-sizing" data-for="htmlwidget-chromosome">
+                {"viewer":{"width":450,"height":125},
+                "browser":{"width":960,"height":125}}
+              </script>
+        </div>
+        <!-- /container -->
+    </section>
+
+
+
+
+
+    <section id="sequecne" class="page-section">
+        <!-- container -->
+        <div class="container">
+            <div class="row">
+                <h2>Sequecne</h2>
+            </div>    
+                    <div class="row">
+                        <div class="col-md-12">                            
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-1 Chr12:9116128:9116229</h5>
+                            <p class='seq_column'>
+                                <span>GCCCGGTGAGATGCATTTTGGACTTCTGGCCTCCAGAACTGTGAGATAATGAATGTACATTGTTTTAAGCACTCGGTTTGTGATCATCTGTTACAGCAG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-2 Chr12:9115764:9115866</h5>
+                            <p class='seq_column'>
+                                <span>TAGCCAGGTGTGGTCATGCACACCTGTAATCCCAGCTACTAAGGAGGCTGAGGCAGAAGAATCTCTTGAACCCGGGAAGTGGAGGTTGCAGTGAGCTGA…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-3 Chr12:9113360:9113543</h5>
+                            <p class='seq_column'>
+                                <span>AGACTCCATTAAATTTAGCTTAGGTAAGTCGCCTTAAAAGAGGAATCCAGCAAGGATTCTGGAAATTAGAAGTAATGACCTGGGAGTCCGGGTCTCAAC…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-4 Chr12:9112377:9112536</h5>
+                            <p class='seq_column'>
+                                <span>GCCACACCCAGAAAGCCACTCAGGGCAGGGCACCAGCTGGCAGCAGCAGAGGCTGCACCAAACACATTCCCAAACACCTCACATGTGTCACTCAAAGTC…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-5 Chr12:9112159:9112211</h5>
+                            <p class='seq_column'>
+                                <span>GACTATTGTGACAAAGGAATGAGGGAACATAAGGAAACAGTCCAGTTCACGC</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-6 Chr12:9110314:9110334</h5>
+                            <p class='seq_column'>
+                                <span>CATTCCAGGCCAGGCGCAGT</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-7 Chr12:9109867:9110035</h5>
+                            <p class='seq_column'>
+                                <span>TATCAGCAGCATGAAAACGGACTAATACAGTAAATTAGTACCAGTAGAGTGGGGCATTGCTGAAAATATACCTGAAAATGTGGAAACAACTTTGGAACT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-8 Chr12:9109321:9109405</h5>
+                            <p class='seq_column'>
+                                <span>TCAGTCCTCACTACAACCCAATAAGGGAGGAGCTATTCTTACCACTGTTTCCTGGTGGAGGTTGCTGAGTCTGGAGGAGTGAAG</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-9 Chr12:9107524:9107644</h5>
+                            <p class='seq_column'>
+                                <span>TTTGTAAATTGCCCAGTCTCGGGTATGTCTCTATCAGCAGTGTGAAAACGGACTAATACACCATAGAACCGTGAGAAATAGTAACCAACTATTGTTTTA…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-10 Chr12:9106491:9106605</h5>
+                            <p class='seq_column'>
+                                <span>TAATAACTGTAACTATTATGATTATTATTCTGTTCCTGAGTTTGTCTTTGGTTATTCTCTGGAGCACTCAAGAGCTTGGCTTCAGCAGATGGGGCCCCT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-11 Chr12:9106236:9106345</h5>
+                            <p class='seq_column'>
+                                <span>GGACACAGTCAAACCATAACAAATACATAATAGCTAAGTATATTATATATATTATATAGTATATATAGCATATAATTAATAAAATAGTTAATATATTCT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-12 Chr12:9104239:9104400</h5>
+                            <p class='seq_column'>
+                                <span>TGGTTCTCAGTAATCCCGGGGTTAGACAGACACTGCTGGATGAAGTGAACATCAGGAAATACCTCTGTGGAATGTGAAACCGAAGCAATTTGAAACAGG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-13 Chr12:9101447:9101674</h5>
+                            <p class='seq_column'>
+                                <span>CTGGGATTTGAATGCAGGGGTGTTTGACGCCGAAGCCAGAGCTTTGTCCCCGAGCCTTCTGAGCTCAGCAAGCAGGGTAGATTTGGGAGAAAGGAGATG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-14 Chr12:9101144:9101207</h5>
+                            <p class='seq_column'>
+                                <span>ATGAAATGAGGAAACGGAGGCCTAGAGAGATTAATGGCCCTGAAGCCAATATGGGAACACACA</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-15 Chr12:9099381:9099523</h5>
+                            <p class='seq_column'>
+                                <span>GTTCCCAGCGTCTGGCAGGCATTTTTCTGGAGGGGCTCTGCTGGCTCAGGAGGCATCTTCCACTTCTGCTGCCTGATTGCCTGACGATCCAAAAGGAAA…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-16 Chr12:9098607:9098756</h5>
+                            <p class='seq_column'>
+                                <span>CTGGTGAGGAGACCCTTCTCCACATGTCCTCCTGCAGAGGCCACCTCATGAGTCCTGGGCTGGCTGGGCATCCTATGACCAGGCCTAAGAGGGTCATTG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-17 Chr12:9095539:9095700</h5>
+                            <p class='seq_column'>
+                                <span>CTCTCCAGAACCTGCTTCCTCACTTTTTGAAATATAAATAGGCTGAGAATTTTCCAAATCTTCAAGGTCTAGTTCCTTCTTGCTTAAAATTCCTTCAGT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-18 Chr12:9094973:9095084</h5>
+                            <p class='seq_column'>
+                                <span>GGGATAGACATTCCCATTCCAAAAAGGAGACATCGGAAAGAAGAAAGGGGTGATAGGTCCCAAGCAAGTCCAAAATCTAGCGAGGCAAATTCCATTTGC…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-19 Chr12:9093465:9093579</h5>
+                            <p class='seq_column'>
+                                <span>TTTGAGATGGAGTCTAGCTCTGTTGCCCAGGCTGCAGTGCAGTGGCACAATCTCGGCTCACTGCAACCTCTGCCTCCCGGGTTCAAGCTGAGGTTCTCC…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-20 Chr12:9091201:9091429</h5>
+                            <p class='seq_column'>
+                                <span>TTTTGTATTTTTAGTAGAGACGGGGTTTTACCGTGTTAGCCAGGATGGTCTCCATCTCCTGACCTCGTGATCTGCCCTCCTCGGCCTCCCACAGTGCTG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-21 Chr12:9090356:9090482</h5>
+                            <p class='seq_column'>
+                                <span>ATCAATGCATAACCTTGCTTTATGTGTGTGTTGTTTGAAGACACCTTGTTTAATGTCCAATGTTGCTTCATCCACATGCACATCCCATAGCCAAAGCCT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-22 Chr12:9089902:9090023</h5>
+                            <p class='seq_column'>
+                                <span>CCCAGGATGGGCTGTAGGGATGTTACTGAGCTGTTTCCCTCTTATGGAGTGGGTAACACACAGCCCCGCAGAAAGAAGCACAGCATGCAGCCAGGGAAT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-23 Chr12:9089200:9089251</h5>
+                            <p class='seq_column'>
+                                <span>GCTCCCACCCGGGGACCCCTGCACACCCCAGCCCACTGAAAACAAGGAGGG</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-24 Chr12:9080094:9080177</h5>
+                            <p class='seq_column'>
+                                <span>GGGCGCCTCACATTCCTGCCTTTGGGCTCCCTTGATCCAAAAGAACCATCGTGCTGAAAGAGAGAATTTGAAATCCTTCCACC</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-25 Chr12:9079639:9079815</h5>
+                            <p class='seq_column'>
+                                <span>AGACATCTCTAGGATAAAAAAGGGGCTGTTTGGGGAATATGGGAAGATAGAATACATAACAGGTTCTACAGGTAATTGGGAATAACCAGTGTGTGGGGG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-26 Chr12:9079244:9079331</h5>
+                            <p class='seq_column'>
+                                <span>TCTCCAGCCACTGACAAATGTCTCCTGAGGAGAAAAAAAAAAACCCAACTGAAAACAGCTGGGCTAAAGGATTTTAGAAAAACCATC</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-27 Chr12:9077701:9077857</h5>
+                            <p class='seq_column'>
+                                <span>AGGAGAGGTAATGGGTGGGGCATGATCCGGACATTTGTGGTTGTAATTCCATCTAACAACACAGAAGTCTTCACCCCTTATCAAGCAATACTGTCAGGG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-28 Chr12:9077346:9077420</h5>
+                            <p class='seq_column'>
+                                <span>TAGGAGCTGATGCCGCTTATTGGCTGGAACCTCAGCCAGATTTATCAGCTGGAGCACTTACACGTGGCCTCTCC</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-29 Chr12:9076756:9076936</h5>
+                            <p class='seq_column'>
+                                <span>CTGGTCAACATAGTGAAACCCCGTCTCTACTGAAAATACAAAAATTAGCTGGGCATGATGGTGCACCTGTAATCCCAGCTACTCAGGAGGCTGAGGCAG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-30 Chr12:9074560:9074783</h5>
+                            <p class='seq_column'>
+                                <span>ACACACAATCATGTAGTTAAATCTCAGAATAATTATGCTGAGTGAAAGGAGCCAGACGAAAAAAGAGTGCATGAGCCCAGCACGGTGGCTCACACCTAT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-31 Chr12:9072653:9072871</h5>
+                            <p class='seq_column'>
+                                <span>GCCTGTAATCCCAGCTACTTGGGGGGCTGAGGCAGGAGAATTGCTTGAACCTGGGAGGCAGAGGTTGCAGTGAGCTGAGATCACACCACTGCACTCCAG…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-32 Chr12:9072359:9072486</h5>
+                            <p class='seq_column'>
+                                <span>ATTTTATTTCCAAAGATTTCTTTCTTCTTTATTGTAGCATGTAATGAATGGAGTGAGTAAAGATTTTTCTTCTCAGTAAAAACAAATCTTATTTTTATT…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-33 Chr12:9070488:9070578</h5>
+                            <p class='seq_column'>
+                                <span>CATAAAAATTACCCACAAAACAGGTGCCTGTAATTCCAGCTACTCGGGAGGCTGAGGCAGAAGAATCGGTTGAACCCAGGAGGCGGAGGT</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-34 Chr12:9069745:9069813</h5>
+                            <p class='seq_column'>
+                                <span>GAAATTTGTATAGAAAGGCTAAAAATACGACAAATAATTTTCAAATTCATATAACAAGAAATAGATTA</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-35 Chr12:9068740:9068842</h5>
+                            <p class='seq_column'>
+                                <span>AGATCCTGAAAGCACAAAGAAAGATTGAGGAAGAAGTTAACAGAAATGAGAAGAATGAGAAAGAAGGTGAAAGTTCCTCAACCTCCCAAGTAGAAAAGA…</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-36 Chr12:9068183:9068224</h5>
+                            <p class='seq_column'>
+                                <span>GAGTGGTCAGCTTTCCAGATCTCAGGTTGACAGAGTGGGCT</span>
+                            </p>
+                        
+                            <h5 class="section-title"> exon-NM_001347423.2-37 Chr12:9067708:9067839</h5>
+                            <p class='seq_column'>
+                                <span>CCTGGGGCCAGTTGGAATTCTGGAAGTCCTGGCTTCCACCCGGCTGTCCGAGCCAACTTCACAGCATCTTCACACTGTCATGCTTTGCTGGAACAACCT…</span>
+                            </p>
+                        						
+                        </div>
+                    </div>
+                </div>
+        <!-- /container -->
+    </section>
+
+
+ <section id="pathway" class="page-section secpadding">
+	  <div class="container">
+        <div class="row">
+            <h2>Pathway</h2>
+        </div>  
+      <div class="row">
+      	    <div class="col-md-4"><div class="title-box clearfix "><h3 class="title-box_primary">New Projects</h3></div> 
+            <div class="list styled custom-list">
+            <ul>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Singapore Township</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mega luxury Villas</a></li>
+            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">RNT Commercial Shopping Mall</a></li>
+            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">SVN Independent & Duplex Houses</a></li>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">World wide IT park</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">North Arena SNT Township</a></li>
+            </ul>
+            </div>
+         </div>
+        
+        <div class="col-md-4"><div class="title-box clearfix "><h3 class="title-box_primary">Large Projects</h3></div> 
+            <div class="list styled custom-list">
+            <ul>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Singapore Township</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mega luxury Villas</a></li>
+            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">RNT Commercial Shopping Mall</a></li>
+            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">SVN Independent & Duplex Houses</a></li>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">World wide IT park</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">North Arena SNT Township</a></li>
+            </ul>
+            </div>
+         </div>
+         <div class="col-md-4"><div class="title-box clearfix "><h3 class="title-box_primary">Our Clients</h3></div> 
+            <blockquote class="blockquote-1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
+					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+				</blockquote></div>
+         
+      </div></div>
+      </section>
+
+    <section id="contactUs" class="contact-parlex">
+        <div class="parlex-back">
+            <div class="container">
+
+                <div class="row">
+                    <div class="heading text-center">
+                        <!-- Heading -->
+                        <h2>Contact Us</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                    </div>
+                </div>
+
+                <div class="row mrgn30">
+
+                    <form method="post" action="" id="contactfrm" role="form">
+
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="comments">Comments</label>
+                                <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+                            </div>
+                            <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
+                            <div class="result"></div>
+                        </div>
+                    </form>
+                    <div class="col-sm-4">
+                        <h4>Address:</h4>
+                        <address>
+                            WebThemez Company<br>
+                            134 Stilla. Tae., 414515<br>
+                            Leorislon, SA 02434-34534 USA
+                        <br>
+                        </address>
+                        <h4>Phone:</h4>
+                        <address>
+                            12345-49589-2<br>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+    </footer>
+    <!--/.page-section-->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    Copyright 2014 | All Rights Reserved -- Template by <a href="http://webThemez.com">WebThemez.com</a>        
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+    </section>
+    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+
+    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="js/jquery.nav.js" type="text/javascript"></script>
+    <script src="js/jquery.cslider.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+
+
+</body>
+</html>
