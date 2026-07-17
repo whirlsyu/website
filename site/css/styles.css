@@ -315,11 +315,12 @@ a:hover {
     position: relative;
     padding: 0px;
     background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0a1628 100%);
-    margin-top: 120px;
+    margin-top: 0;
     overflow: hidden;
-    min-height: 600px;
+    min-height: 800px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 120px;
 }
 
 .dna-bg {
